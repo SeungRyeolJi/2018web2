@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../css/recruit.css">
+</head>
+<body>
+<script>
+    $(function () {
+        $("#header").load("header.html");
+    });
+    $(function () {
+        $("#footer").load("footer.html");
+    });
+</script>
+    <div id="wrap">
+        <div id="header"></div>
+        <div id="section">
+            <div id="imgBox">
+            </div>
+                <div id="contentBox">
+                    <div id="notice">
+                        <h1>채용공고</h1>
+                        <ul>
+                            <li><a href="#">법인별 공고</a></li>
+                            <li><a href="#">직군별 공고</a></li>
+                        </ul>
+                    </div>
+                    <div id="content">
+                        <div class="circle">
+                            <img src="../img/notcie_content_img.png" height="39" width="95"/></div>
+                        <table>
+                            <tr><td colspan="5">
+                                <hr></td></tr>
+                            <tr>
+                                <th>NHN Ent. 모집분야</th>
+                                <th>대상</th>
+                                <th>직군</th>
+                                <th>모집기간</th>
+                                <th>지원서 작성</th>
+                            </tr>
+                            <tr><td colspan="5">
+                                <hr></td></tr>
+                            <tr>
+                                <td><a href="#">Java  웹서비스/플랫폼 개발자 경력 채용(상시Pool)</a></td>
+                                <td><a href="#">경력</a></td>
+                                <td><a href="#">기술</a></td>
+                                <td><a href="#">2017.09.06 ~ 채용시까지</a></td>
+                                <td><button>신규지원</button><button>수정</button></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

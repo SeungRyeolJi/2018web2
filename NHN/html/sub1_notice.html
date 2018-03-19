@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/notice.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<script>
+    $(function(){
+        $("#header").load("header.html");
+    });
+    $(function () {
+        $("#footer").load("footer.html");
+    });
+</script>
+<div id="wrap">
+ <div id="header"></div>
+<div id="section">
+    <div id="noticeImg">
+    <div id="notice">
+        <div id="content">
+        <h2>공지사항</h2>
+        <hr id="solid">
+
+        <div class="guide">
+            <p>[안내][법인 공통] 수시채용 서류/면접전형 결과발표 안내</p>
+            <p>수시(상시)채용 채용전형 결과발표와 관련하여 안내드립니다.</p>
+        </div>
+            <hr>
+
+        <div class="guide">
+            <p>[안내][법인 공통] 채용 홈페잊 점검 안내</p>
+            <p>점검일시 : 11월 24일 목요일 오전 2시 ~ 오전 8시(예정)</p>
+        </div>
+            <hr>
+
+        <div id="pageNumber">
+            <p><a href="#">1</a></p>
+        </div>
+
+            <div id="findKeyword">
+                <input type="text" name="키워드" id="keyword"  placeholder="키워드">
+            </div>
+    </div>
+    </div>
+    </div>
+</div>
+    <div id="footer"></div>
+</div>
+</body>
+</html>

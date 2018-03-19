@@ -1,0 +1,75 @@
+*{
+    margin: 0 ;
+    padding: 0;
+}
+#wrap{
+    margin:  0 auto;
+    height: auto;
+    width: 1800px;
+}
+#section{
+    height: 1200px;
+    width: 100%;
+}
+#content{
+    margin-top: 50px;
+    color: #4a4a4a;
+    text-decoration: none;
+}
+#imgBox{
+    height:100%;
+    width: 35%;
+    background: url("../img/recruit_default_2560.jpg");
+    background-size: 100%
+    1500px;
+    float: left;
+}
+#contentBox{
+    margin: 3% 3% 0 3%;
+    width: 59%;
+    float: right;
+}
+
+#contentBox a{
+    text-decoration: none;
+    color: inherit;
+}
+#notice ul{
+    margin-top: 30px;
+    width: 100%;
+ }
+#notice:after{content:'';display:block;clear:both;}
+.circle{
+    margin: 20px 25px 0 0 ;
+    float: left;
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    background: #cbcbcb;
+}
+.circle img{
+    width: 70%;
+    margin: 0 auto;
+    height: auto;
+}
+#notice ul li{
+    list-style: none;
+    float: left;
+    width: 50%;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
+#notice ul li:first-child{
+    background-color: #404040;
+    color: white;
+}
+#notice ul li:nth-child(2){
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+#notice table th{
+    width: 50%;
+    height: 50px;
+    border-spacing: 0px
+}
