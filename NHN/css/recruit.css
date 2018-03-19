@@ -48,9 +48,11 @@
     background: #cbcbcb;
 }
 .circle img{
-    width: 70%;
-    margin: 0 auto;
-    height: auto;
+    width: 120px;
+    height: 50px;
+    top: 50px;
+    left: 14px;
+    position: relative;
 }
 #notice ul li{
     list-style: none;
@@ -68,8 +70,36 @@
     box-sizing: border-box;
     border: 1px solid black;
 }
-#notice table th{
-    width: 50%;
+#content>table{
+    width: 80%;
     height: 50px;
     border-spacing: 0px
+}
+#content tbody tr{
+    height:30px;
+    line-height: 30px;
+}
+#content table td{
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+}
+#content table tbody td>button{
+    font-size: 12px;
+    width: 70px;
+    height: 25px;
+}
+#content table>tbody>tr>td:first-child{
+    text-align: left;
+}
+#content table tbody td>button:first-child{
+    border: none;
+    margin-right: 5px;
+    background: red;
+    color: white;;
+}
+#content>table>td:nth-child(2){
+    border: 1px solid black;
+    box-sizing: border-box;
 }
