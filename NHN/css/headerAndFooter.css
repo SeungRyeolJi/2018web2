@@ -21,9 +21,6 @@
 #header ul li a{
     color: white;
 }
-#header ul li:first-child a{
-    color: red;
-}
 #header a{
     text-decoration: none;
 }

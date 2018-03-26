@@ -7,6 +7,9 @@
     height: auto;
     width: 1800px;
 }
+#header ul li:nth-child(2) a{
+    color: red;
+}
 #section{
     height: 1200px;
     width: 100%;
@@ -73,7 +76,7 @@
 #content>table{
     width: 80%;
     height: 50px;
-    border-spacing: 0px
+    border-spacing: 0px;
 }
 #content tbody tr{
     height:30px;

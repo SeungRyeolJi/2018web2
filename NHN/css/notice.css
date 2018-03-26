@@ -5,7 +5,9 @@
 li{
   list-style: none;
 }
-
+#header ul li:first-child a{
+    color: red;
+}
 #wrap{
     margin:  0 auto;
     width: 1800px;
