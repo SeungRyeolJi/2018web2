@@ -55,11 +55,26 @@ li{
     text-decoration: none;
 }
 #findKeyword{
+    background: #000;
+    height: 25px;
     width: 150px;
     margin: 0 auto;
 }
 #keyword{
-    width: 100%;
+    color: white;
+    width: 80%;
+    height: 100%;
+    line-height: 25px;
+    border: none;
+    background-color: rgba(255,255,255,0);
+}
+#keyword::placeholder{
+    color: rgba(255,255,255,0.7);
+}
+#findKeyword>img{
+    float: right;
+    height: 100%;
+    width: auto;
 }
 #footer{
     line-height: 50px;
