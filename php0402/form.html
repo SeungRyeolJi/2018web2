@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $("#btn_up").click(function () {
+                $("form").attr('action','update.php')
+            });
+            $("#btn_del").click(function () {
+                $("form").attr('action','del.php');
+            });
+
+        })
+    </script>
+</head>
+<body>
+    <form action="del.php">
+        <input type="text">
+        <button type="submit" id="btn_up">수정</button>
+        <button type="submit" id="btn_del">삭제</button>
+    </form>
+</body>
+</html>
