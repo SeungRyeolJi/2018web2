@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $("#sign_ok").click(function () {
+                var pwd_chk = $("#pwd_chk").val();
+                var password = $("#password").val();
+                if(pwd_chk != password)
+                    alert("비밀번호와 비밀번호 확인 값이 다릅니다.");
+                else
+                    alert("확인");
+            });
+        });
+    </script>
+    <link rel="stylesheet" href="join.css">
+</head>
+<body>
+<div id="sign">
+    <div id="sign_wrap">
+    <form action="">
+        <dl class="item_id">
+<!--          dl = descriptio list(서술)-->
+            <dt><label for="id">아이디</label></dt>
+            <dd><input type="text" id="id" name="id"></dd>
+        </dl>
+        <dl class="item_pw">
+            <dt><label for="password">비밀번호</label></dt>
+            <dd> <input type="password" id="password" name="password"></dd>
+            <dt><label for="pwd_chk">비밀번호 확인</label></dt>
+            <dd> <input type="password" id="pwd_chk" name="pwd_chk"></dd>
+        </dl>
+            <dl class="item_name">
+                <dt><label for="name">이름</label></dt>
+                <dd><input type="text" id="name" name="name"></dd>
+            </dl>
+            <dl class="item_address">
+                <dt><label for="address">주소</label></dt>
+                <dd><input type="text" id="address" name="address"></dd>
+            </dl>
+            <button type = "submit" id="sign_ok">확인</button>
+    </form>
+</div>
+</div>
+</body>
+</html>

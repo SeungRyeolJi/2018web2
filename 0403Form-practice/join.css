@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+#sign{
+    width: 1000px;
+    margin: 0 auto;
+    background: #d6f8ff;
+    padding: 100px 0 100px 0;
+}
+#sign_wrap{
+    width: 700px;
+    margin: 0 auto;
+}
+.item_id dt, .item_pw dt, .item_address dt, .item_name dt{
+    font-size: 17px;
+    font-weight: bold;
+    margin: 10px 0 10px 0 ;
+    width: 200px;
+    float: left;
+    height: 25px;
+}
+.item_id input, .item_pw input, .item_name input,.item_address input  {
+    margin: 10px 0 10px 0 ;
+    line-height: 25px;
+    width: 300px;
+}
+.item_id,.item_pw, .item_name, .item_address{
+    overflow: hidden;
+}
+.joinBox{
+    margin: 0 auto;
+    width: 500px;
+    height: 800px;
+}
+#sign_ok{
+    box-sizing: border-box;
+    margin: 0 auto;
+    background: #4d67ff;
+    color: white;
+    border-radius: 5px;
+    width: 70px;
+    height: 30px;
+    display: block;
+}
+
+
