@@ -78,14 +78,16 @@ a{
     border: 2px solid #6881ff;
     height: 150px;
     transition: 0.5s;
+    border-top: none;
     border-bottom-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 .menu>ul>li:nth-child(4):hover .sub_menu {
-    border-top-right-radius: 20px;
     height: 250px;
     transition: 0.5s;
+    border-top: none;
     border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 .sub_menu{
     overflow: hidden;
