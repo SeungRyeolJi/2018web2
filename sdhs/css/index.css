@@ -107,14 +107,15 @@ a{
     text-decoration: underline;
 }
 .imgSlide{
-    top : 15px;
+    padding-top:15px;
     position: relative;
     margin: 0 auto;
     width: 800px;
+    height: 533px;
+    overflow: hidden;
 }
 
 .imgSlide > img {
     width: inherit;
     position: absolute;
-
 }
