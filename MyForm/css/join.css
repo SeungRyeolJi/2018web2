@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 50;
+}
+#sign{
+    top:150px;
+    width: 600px;
+    height: 600px;
+    margin:  0 auto;
+    position: relative;
+    z-index: 100;
+    background: rgba(0,0,0,0.4);
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.7);
+    border-radius: 5px;
+}
+#sign img{
+    margin: 0 auto;
+    display: table;
+    top:  40px;
+    position: relative;
+}
+#sign form{
+    color: white;
+    font-weight: bolder;
+    font-size: 17px;
+    position: absolute;
+    bottom: 100px;
+    width: 400px;
+    left: 100px;
+}
+form h2{
+    top: -20px;
+    position: relative;
+    display: table;
+    margin:  0 auto;
+}
+.item_id dt,.item_address dt, .item_name dt, .item_pw dt{
+    overflow:hidden;
+    float: left;
+    width: 120px;
+    height:30px;
+    line-height:30px;
+}
+.item_id dd, .item_addres dd, .item_name dd, .item_pw dd {
+    float: left;
+    height:30px;
+    width: 280px;
+}
+dl input {
+    width: 250px;
+    margin:0 auto;
+    line-height : 22px;
+    border:solid 1px rgba(0,0,0,0.4);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+#sign button{
+    margin-top: 50px;
+}
+.joinBox{
+    margin: 0 auto;
+    width: 500px;
+    height: 800px;
+}
+
+
+
+
+
+
+
+
