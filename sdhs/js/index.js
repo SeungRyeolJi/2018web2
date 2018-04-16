@@ -16,4 +16,8 @@ $(document).ready(function () {
             next = 0;
     }
     setInterval(slide,3000);
+
+    $("#loginButton").click(function () {
+        this.style.display = "block";
+    })
 });
