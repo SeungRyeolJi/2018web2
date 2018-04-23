@@ -10,7 +10,7 @@
     z-index: 110;
     color: rgba(0 ,0 , 0 , 0.3);
 }
-#login{
+#login_Popup{
     display: none;
     position: absolute;
     width: 600px;
@@ -20,52 +20,78 @@
     margin-top: -150px;
     margin-left: -300px;
     background: #ffffff;
-    z-index: 120;
+    z-index: 160;
 }
 .login_header{
     width: 600px;
-    height: 50px;
-    color: #0016fb;
+    height: 80px;
+    background: #262634;
+    color: #ffffff;
 }
-#login>form{
-    height: 100px;
+.login_header>h2{
+    position: relative;
+    top:20px;
+    left:50px
+}
+.login_header>img{
+    top:-20px;
+    width: 30px;
+    height: auto;
+    float:right;
+    position: relative;
+    right: 15px;
+    cursor: pointer;
+}
+#login_Popup>form{
+    height: 120px;
     width: 500px;
-    margin: 50px 0 0 50px;
+    margin: 30px 0 0 50px;
     background: #d6d6d6;
 }
-#login > form >button{
+#login_Popup> form >button{
     right: 50px;
     position: relative;
     width: 100px;
-    top: 10px;
+    top: 20px;
     height: 80px;
     float: right;
 }
-#login> form > div{
-    top: 10px;
-    left: 100px;
+#login_Popup> form > div{
+    top: 20px;
+    left: 50px;
     width: 200px;
     height: 90px;
     display: inline;
     position: relative;
     float: left;
 }
-#login> form > div>input{
-    width: 200px;
+#login_Popup> form > div>input{
+    width: 300px;
     height: 40px;
     box-sizing: border-box;
     display: block;
 }
-#login>ul{
+#login_Popup>ul{
     position: relative;
     top: 20px;
     margin: 0 auto;
     display: table;
 }
-#login > ul >li{
+#login_Popup > ul >li{
     text-align: center;
     width: 150px;
     float: left;
+}
+#join_Popup{
+    display: none;
+    position: absolute;
+    margin-left:-300px;
+    margin-top:-200px;
+    left: 50%;
+    top: 50%;
+    z-index: 160;
+    width: 600px;
+    background: #ffffff;
 }
 .wrap{
     width: 1000px;
@@ -139,6 +165,12 @@ a{
     line-height: 50px;
     float: left;
 }
+#loginButton,#joinButton{
+    width: 75px;
+    height: 30px;
+    display: table;
+}
+
 .menu>ul>li:hover .sub_menu{
     background: rgba(255,255,255,0.6);
     z-index: 100;
@@ -205,5 +237,3 @@ a{
     height: 50px;
     width: 40px;
 }
-
-
