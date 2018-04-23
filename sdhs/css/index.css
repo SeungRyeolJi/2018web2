@@ -124,8 +124,8 @@ a{
     width: 34px;
 }
 .menu>ul{
-    border-bottom: 2px solid  #0016fb;
-    border-top: 2px solid  #0016fb;
+    background: #262634;
+    color: white;
 }
 .menu>ul:after {
     content: "";
@@ -143,7 +143,7 @@ a{
     background: rgba(255,255,255,0.6);
     z-index: 100;
     position: relative;
-    border: 2px solid #b9c8ff;
+    border: 2px solid #262634;
     height: 150px;
     transition: 0.5s;
     border-top: none;
@@ -162,6 +162,7 @@ a{
     height: 0;
 }
 .sub_menu>li{
+    color:black;
     line-height: 50px;
     height: 50px;
 }
@@ -176,11 +177,33 @@ a{
     position: relative;
     margin: 0 auto;
     width: 800px;
-    height: 533px;
+    height: 470px;
     overflow: hidden;
 }
-
 .imgSlide > img {
     width: inherit;
     position: absolute;
 }
+.slideControl{
+    box-sizing: border-box;
+    position: absolute;
+    background: rgba(0,   0, 0 ,0.6);
+    top:  580px;
+    margin-left: 400px;
+    border:3px solid white;
+    padding: 20px;
+    z-index: 150;
+    border-radius: 20px;
+}
+#left_arrow,#right_arrow{
+    cursor: pointer;
+    height: 60px;
+    width: 30px;
+}
+.slideControl>img:nth-child(2){
+    margin: 0 30px 4px 30px;
+    height: 50px;
+    width: 40px;
+}
+
+
