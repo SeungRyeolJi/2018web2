@@ -1,6 +1,9 @@
 *{
-    margin: 0;
-    padding: 0;
+     margin: 0;
+     padding: 0;
+ }
+body{
+    background: #f3f6f8;
 }
 #mask{
     display: none;
@@ -146,7 +149,7 @@ a{
     margin-left: 20px;
     border: none;
 }
-.login_join>ul>a>img{
+.searchImg{
     height: 34px;
     width: 34px;
 }
@@ -171,7 +174,6 @@ a{
     height: 30px;
     display: table;
 }
-
 .menu>ul>li:hover .sub_menu{
     background: rgba(255,255,255,0.6);
     z-index: 100;
@@ -236,4 +238,82 @@ a{
     margin: 0 30px 4px 30px;
     height: 50px;
     width: 40px;
+    cursor: pointer;
+}
+.notify{
+    margin: 50px auto 0 0 ;
+    width: 90%;
+    height: 40px;
+    background: #414141;
+    color: white;
+}
+.notify img{
+    margin-left: 30px;
+    margin-right: 20px;
+    height: inherit;
+    width: auto;
+    float: left;
+}
+.notify p{
+    float: left;
+    line-height: 40px;
+}
+.notify::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.notify>p:nth-child(2){
+    margin-right: 40px;
+    margin-left: 20px;
+    font-size: 15px;
+}
+.notify>p:nth-child(3){
+    margin-right: 50px;
+}
+.notify>p:nth-child(4){
+    margin-right: 50px;
+    font-size: 14px;
+}
+.login_Box {
+    overflow: hidden;
+    margin:  30px 100px 0 0;
+    background: #c9ddff;
+    width: 40%;
+    color: white;
+}
+.login_Box h2{
+    padding:15px 0 20px 30px ;
+    background: #262634;
+    margin-bottom: 20px;
+}
+.login_Box form{
+    margin-left: 20px;
+    display: table;
+}
+.login_Box form input{
+    border: none;
+    width: 70%;
+    height: 30px;
+    line-height: 30px;
+    float: left;
+    overflow: hidden;
+}
+.login_Box form div{
+    margin: 20px 0 20px;
+    float: left;
+    display: inline;
+
+}
+.login_Box button{
+    margin-top:  -30px;
+    display: inline;
+    float: left;
+    width: 20%;
+    height: 60px
+}
+.login_Box ul li{
+    color: black;
+    padding: 20px;
+    float: left;
 }
