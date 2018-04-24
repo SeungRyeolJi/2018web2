@@ -35,13 +35,14 @@
             <h2>서울디지텍고등학교</h2>
             <img src="img/x.png" alt="닫기 버튼" id="close_join">
         </div>
-            <p>아이디</p><input type="">
-            <p>비밀번호</p><input type="password">
-            <p>비밀번호 재확인</p><input type="password">
-            <p>이메일</p><input type="email">
-            <p>전화번호</p><input type="text">
-            <p>이름</p><input type="text">   
-            <p>주소</p><input type="text">
+        <form action="#">
+            <label for="id">아이디</label><input type="text" id="id">
+            <label for="pw">비밀번호</label><input type="password" id="pw">
+            <label for="rePw">비밀번호 재확인</label><input type="password" id="rePw">
+            <label for="email">이메일</label><input type="email" id="email">
+            <label for="callNum">전화번호</label><input type="text" id="callNum">
+            <label for="name">이름</label><input type="text" id="name">
+            <label for="address">주소</label><input type="text" id="address">
         </form>
     </div>
     <div class="wrap">
@@ -52,10 +53,11 @@
 
             <div class="login_join">
                 <ul>
+                    <li><a href="#">사이트맵</a></li>
                     <li><a href="#" id="loginButton">로그인</a></li>
                     <li><a href="#" id="joinButton">회원가입</a></li>
-                    <li><input type="text"></li>
-                    <a href="#"><img src="img/magnifier.jpg" alt="돋보기"></a>
+                    <li><input type="text" title="search"></li>
+                    <img src="img/magnifier.jpg" alt="search" id="searchImg">
                 </ul>
             </div>
 
