@@ -128,14 +128,29 @@
              </ul>
             </div>
             <div class="infoBox">
+                <button onclick="infoBoxChange('n')">공지사항</button>
+                <button onclick="infoBoxChange('c')">가정통신문</button>
+                <script>
+                    function infoBoxChange(result){
+                        if(result == 'n'){
+                            $(".notice").attr({'display':'block'});
+                            $(".cmuDoc").css({'display':'none'});
+                        }
+                        else if(result=='c'){
+                            $(".cmuDoc").css({'display':'block'});
+                            $(".notice").attr({'display':'none'});
+                        }
+                    }
+                </script>
                 <table class="notice">
+                    <!-- 공지사항-->
                     <tr>
                         <td>제5회 교내 사장되기(Be the CEOs) 창업대회 안내</td>
                         <td>2018-04-04</td>
                     </tr>
                     <tr>
                         <td>2018학년도 국내외 취업상담사 채용</td>
-                        <td>2018-04-0</td>
+                        <td>2018-04-03</td>
                     </tr>
                     <tr>
                         <td>학부모 총회 행사진행</td>
@@ -173,7 +188,6 @@
                         </tr>
                 </table>
             </div>
-
         </div>
         <footer>
 

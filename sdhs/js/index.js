@@ -9,6 +9,7 @@ $(document).ready(function () {
 
     var slideCurrent = setInterval(slide,intervalTime);
 
+
     $("#loginButton").click(function () {
         $("#login_Popup").css({'display':'block'});
         $("#mask").css({'display':'blcok'});
