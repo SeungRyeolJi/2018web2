@@ -9,189 +9,186 @@
 </head>
 <!--주색 보조색-->
 <body>
-    <div id="mask">
+<div id="mask">
 
+</div>
+<div id="login_Popup">
+    <div class="login_header">
+        <h2>서울디지텍고등학교</h2>
+        <img src="img/x.png" alt="닫기 버튼" id="close_login">
     </div>
-    <div id="login_Popup">
-        <div class="login_header">
-            <h2>서울디지텍고등학교</h2>
-            <img src="img/x.png" alt="닫기 버튼" id="close_login">
-        </div>
-        <form action="#">
-            <div>
+    <form action="#">
+        <div>
             <input type="text" placeholder="아이디">
             <input type="text" placeholder="비밀번호">
-            </div>
-            <button type="submit">로그인</button>
-        </form>
-        <ul>
-            <li><a href="#">회원가입</a></li>
-            <li><a href="#">아이디 찾기</a></li>
-            <li><a href="#">비밀번호 찾기</a></li>
-        </ul>
-    </div>
-    <div id="join_Popup">
-        <div class="login_header">
-            <h2>서울디지텍고등학교</h2>
-            <img src="img/x.png" alt="닫기 버튼" id="close_join">
         </div>
-        <form action="#">
-            <label for="id">아이디</label><input type="text" id="id">
-            <label for="pw">비밀번호</label><input type="password" id="pw">
-            <label for="rePw">비밀번호 재확인</label><input type="password" id="rePw">
-            <label for="email">이메일</label><input type="email" id="email">
-            <label for="callNum">전화번호</label><input type="text" id="callNum">
-            <label for="name">이름</label><input type="text" id="name">
-            <label for="address">주소</label><input type="text" id="address">
-        </form>
+        <button type="submit">로그인</button>
+    </form>
+    <ul>
+        <li><a href="#">회원가입</a></li>
+        <li><a href="#">아이디 찾기</a></li>
+        <li><a href="#">비밀번호 찾기</a></li>
+    </ul>
+</div>
+<div id="join_Popup">
+    <div class="login_header">
+        <h2>서울디지텍고등학교</h2>
+        <img src="img/x.png" alt="닫기 버튼" id="close_join">
     </div>
-    <div class="wrap">
-        <header>
-            <div class="imgBox">
-                <a href="#"><img src="img/logo.png" alt="로고"></a>
-            </div>
+    <form action="#">
+        <label for="id">아이디</label><input type="text" id="id">
+        <label for="pw">비밀번호</label><input type="password" id="pw">
+        <label for="rePw">비밀번호 재확인</label><input type="password" id="rePw">
+        <label for="email">이메일</label><input type="email" id="email">
+        <label for="callNum">전화번호</label><input type="text" id="callNum">
+        <label for="name">이름</label><input type="text" id="name">
+        <label for="address">주소</label><input type="text" id="address">
+    </form>
+</div>
+<div class="wrap">
+    <header>
+        <div class="imgBox">
+            <a href="#"><img src="img/logo.png" alt="로고"></a>
+        </div>
 
-            <div class="login_join">
-                <ul>
-                    <li><a href="#">사이트맵</a></li>
-                    <li><a href="#" id="loginButton">로그인</a></li>
-                    <li><a href="#" id="joinButton">회원가입</a></li>
-                    <li><input type="text" title="search"></li>
-                    <img src="img/magnifier.jpg" alt="search" class="searchImg">
-                </ul>
-            </div>
+        <div class="login_join">
+            <ul>
+                <li><a href="#">사이트맵</a></li>
+                <li><a href="#" id="loginButton">로그인</a></li>
+                <li><a href="#" id="joinButton">회원가입</a></li>
+                <li><input type="text" title="search"></li>
+                <img src="img/magnifier.jpg" alt="search" class="searchImg">
+            </ul>
+        </div>
 
-            <div class="menu">
-                <ul>
-                    <li><a href="#">학교소개</a>
-                        <ul class="sub_menu">
-                            <li><a href="#">학교 자랑</a></li>
-                            <li><a href="#">학교 오는 길</a></li>
-                            <li><a href="#">교육목표</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">학생마당</a>
-                        <ul class="sub_menu">
-                            <li><a href="#">학교건의사항</a></li>
-                            <li><a href="#">동아리 및 방과후</a></li>
-                            <li><a href="#">학생 게시판</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">자료실</a>
-                        <ul class="sub_menu">
-                            <li><a href="#">교수학습자료실</a></li>
-                            <li><a href="#">가정통신문</a></li>
-                            <li><a href="#">학생</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">입학안내</a>
-                        <ul class="sub_menu">
-                            <li><a href="#">입학안내</a></li>
-                            <li><a href="#">게임콘텐츠학과</a></li>
-                            <li><a href="#">VR콘텐츠과</a></li>
-                            <li><a href="#">공간전보학과</a></li>
-                            <li><a href="#">유비쿼터스과</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </header>
-        <div class="content">
-            <div class="imgSlide">
-                <img src="img/slide1.jpg" alt="이미지슬라이드1">
-                <img src="img/silde2.jpg" alt="이미지슬라이드2">
-                <img src="img/silde3.jpg" alt="이미지슬라이드3">
-            </div>
-            <div class="slideControl">
-                <img id="left_arrow" src="img/left.png" alt="왼쪽 화살표">
-                <img id="stop_start" src="img/stop.png" alt="stop_start">
-                <img id="right_arrow" src="img/right.png" alt="오른쪽 화살표">
-            </div>
-            <div class="notify">
-                <img src="img/speaker.png" alt="확성기">
-                <p>알려드립니다</p>
-                <p>-</p>
-                <p>아직 없습니다.</p>
-            </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#">학교소개</a>
+                    <ul class="sub_menu">
+                        <li><a href="#">학교 자랑</a></li>
+                        <li><a href="#">학교 오는 길</a></li>
+                        <li><a href="#">교육목표</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">학생마당</a>
+                    <ul class="sub_menu">
+                        <li><a href="#">학교건의사항</a></li>
+                        <li><a href="#">동아리 및 방과후</a></li>
+                        <li><a href="#">학생 게시판</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">자료실</a>
+                    <ul class="sub_menu">
+                        <li><a href="#">교수학습자료실</a></li>
+                        <li><a href="#">가정통신문</a></li>
+                        <li><a href="#">학생</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">입학안내</a>
+                    <ul class="sub_menu">
+                        <li><a href="#">입학안내</a></li>
+                        <li><a href="#">게임콘텐츠학과</a></li>
+                        <li><a href="#">VR콘텐츠과</a></li>
+                        <li><a href="#">공간전보학과</a></li>
+                        <li><a href="#">유비쿼터스과</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="content">
+        <div class="imgSlide">
+            <img src="img/slide1.jpg" alt="이미지슬라이드1">
+            <img src="img/silde2.jpg" alt="이미지슬라이드2">
+            <img src="img/silde3.jpg" alt="이미지슬라이드3">
+        </div>
+        <div class="slideControl">
+            <img id="left_arrow" src="img/left.png" alt="왼쪽 화살표">
+            <img id="stop_start" src="img/stop.png" alt="stop_start">
+            <img id="right_arrow" src="img/right.png" alt="오른쪽 화살표">
+        </div>
+        <div class="notify">
+            <img src="img/speaker.png" alt="확성기">
+            <p>알려드립니다</p>
+            <p>-</p>
+            <p>아직 없습니다.</p>
+        </div>
 
-            <div class="login_Box">
+        <div class="login_Box">
             <h2>로그인</h2>
-              <form action="#">
-                    <input type="text" placeholder="아이디" class="">
-                    <input type="text" placeholder="비밀번호" class="sungJuBabo">
-                    <button type="submit">로그인 </button>
-             </form>
-             <ul>
+            <form action="#">
+                <input type="text" placeholder="아이디" class="">
+                <input type="text" placeholder="비밀번호" class="sungJuBabo">
+                <button type="submit">로그인 </button>
+            </form>
+            <ul>
                 <li><a href="#">회원가입</a></li>
                 <li><a href="#">아이디 찾기</a></li>
                 <li><a href="#">비밀번호 찾기</a></li>
-             </ul>
-            </div>
-            <div class="infoBox">
-                <button onclick="infoBoxChange('n')">공지사항</button>
-                <button onclick="infoBoxChange('c')">가정통신문</button>
-                <script>
-                    function infoBoxChange(result){
-                        if(result == 'n'){
-                            $(".notice").attr({'display':'block'});
-                            $(".cmuDoc").css({'display':'none'});
-                        }
-                        else if(result=='c'){
-                            $(".cmuDoc").css({'display':'block'});
-                            $(".notice").attr({'display':'none'});
-                        }
-                    }
-                </script>
-                <table class="notice">
-                    <!-- 공지사항-->
-                    <tr>
-                        <td>제5회 교내 사장되기(Be the CEOs) 창업대회 안내</td>
-                        <td>2018-04-04</td>
-                    </tr>
-                    <tr>
-                        <td>2018학년도 국내외 취업상담사 채용</td>
-                        <td>2018-04-03</td>
-                    </tr>
-                    <tr>
-                        <td>학부모 총회 행사진행</td>
-                        <td>2018-03-23</td>
-                    </tr>
-                    <tr>
-                        <td>2018학년도 교무행정지원사 채용 공고</td>
-                        <td>2018-03-23</td>
-                    </tr>
-                    <tr>
-                        <td>산학일체형 도제학교 행정요원 채용 공고(긴급)</td>
-                        <td>2018-03-22</td>
-                    </tr>
-                </table>
-                <table class="cmuDoc">
-                        <tr>
-                            <td>취업(진로)캠프 실시안내</td>
-                            <td>2018-04-11</td>
-                        </tr>
-                        <tr>
-                            <td>취업(진로)캠프 참가 경비 인출안내</td>
-                            <td>2018-04-06</td>
-                        </tr>
-                        <tr>
-                            <td>취업(진로)캠프 안전보험 가입 개인정보 동의 안내</td>
-                            <td>2018-04-06</td>
-                        </tr>
-                        <tr>
-                            <td>< 제 18-28호 > 자녀사랑하기 2호</td>
-                            <td>2018-04-05</td>
-                        </tr>
-                        <tr>
-                            <td>< 제 18-26호 > 2018년 4월 급식 안내 가정통신문</td>
-                            <td>2018-03- 30</td>
-                        </tr>
-                </table>
-            </div>
+            </ul>
         </div>
-        <footer>
+        <div class="infoBox">
+            <button>공지사항</button>
+            <button>가정통신문</button>
 
-        </footer>
+            <table class="notice">
+                <!-- 공지사항-->
+                <tr>
+                    <td><a href="#">제5회 교내 사장되기(Be the CEOs) 창업대회 안내</a></td>
+                    <td>2018-04-04</td>
+                </tr>
+                <tr>
+                    <td><a href="#">2018학년도 국내외 취업상담사 채용</a></td>
+                    <td>2018-04-03</td>
+                </tr>
+                <tr>
+                    <td><a href="#">학부모 총회 행사진행</a></td>
+                    <td>2018-03-23</td>
+                </tr>
+                <tr>
+                    <td><a href="#">2018학년도 교무행정지원사 채용 공고</a></td>
+                    <td>2018-03-23</td>
+                </tr>
+                <tr>
+                    <td><a href="#">산학일체형 도제학교 행정요원 채용 공고(긴급)</a></td>
+                    <td>2018-03-22</td>
+                </tr>
+            </table>
+            <table class="cmuDoc">
+                <tr>
+                    <td><a href="#">취업(진로)캠프 실시안내</a></td>
+                    <td>2018-04-11</td>
+                </tr>
+                <tr>
+                    <td><a href="#">취업(진로)캠프 참가 경비 인출안내</a></td>
+                    <td>2018-04-06</td>
+                </tr>
+                <tr>
+                    <td><a href="#">취업(진로)캠프 안전보험 가입 개인정보 동의 안내</a></td>
+                    <td>2018-04-06</td>
+                </tr>
+                <tr>
+                    <td><a href="#">< 제 18-28호 > 자녀사랑하기 2호</a></td>
+                    <td>2018-04-05</td>
+                </tr>
+                <tr>
+                    <td><a href="#">< 제 18-26호 > 2018년 4월 급식 안내 가정통신문</a></td>
+                    <td>2018-03-30</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="map">
+            <h3>학교 오시는 길</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1964.9421870060432!2d126.98959367605288!3d37.539028094926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca24eb401c3c3%3A0xcac6c402eb3ae54f!2z7ISc7Jq465SU7KeA7YWN6rOg65Ox7ZWZ6rWQ!5e1!3m2!1sko!2skr!4v1524550968256" width="590" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <div class="mealBox">
+
+        </div>
     </div>
+    <footer>
+        <p>풋터</p>
+    </footer>
+</div>
 </body>
 </html>
