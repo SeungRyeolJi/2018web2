@@ -1,5 +1,7 @@
 $(document).ready(function () {
     var next = 1;
+    var adNext = 0;
+
     var $imgSlide = $(".imgSlide>img");
     var imgSlide = $imgSlide;
     var max = imgSlide.length-1;
@@ -8,6 +10,7 @@ $(document).ready(function () {
     imgSlide.eq(1).animate({left:800},0);
 
     var slideCurrent = setInterval(slide,intervalTime);
+    setInterval(adimgSlide(),intervalTime);
 
     $(".infoBox>button:nth-child(1)").click(function () {
         $(this).css({'color':'#666bff'});
@@ -17,7 +20,9 @@ $(document).ready(function () {
         infoBoxChange('c');
     });
 
+    function adimgSlide() {
 
+    }
 
     function infoBoxChange(result){
         if(result == 'n'){
