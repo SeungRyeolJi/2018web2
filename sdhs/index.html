@@ -178,17 +178,37 @@
             </table>
         </div>
 
-        <div class="map">
-            <h3>학교 오시는 길</h3>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1964.9421870060432!2d126.98959367605288!3d37.539028094926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca24eb401c3c3%3A0xcac6c402eb3ae54f!2z7ISc7Jq465SU7KeA7YWN6rOg65Ox7ZWZ6rWQ!5e1!3m2!1sko!2skr!4v1524550968256" width="590" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <div class="mapBox">
+            <div id="map"></div>
+            <script>
+                function initMap() {
+                var uluru = {lat: 37.539030, lng: 126.990699};
+
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 18,
+                    center: uluru
+                });
+                var marker = new google.maps.Marker({
+                    position: uluru,
+                    map: map
+                });
+            }</script>
         </div>
         <div class="mealBox">
 
+        </div>
+        <div class="ad">
+            <a href="#"><img src="img/ad_img_1.jpg" alt="학교 백터 포스터"></a>
+            <a href="#"><img src="img/ad_img_2.jpg" alt="학교 음악 포스터"></a>
+            <a href="#"><img src="img/ad_img_3.jpg" alt="학교 음식 포스터"></a>
         </div>
     </div>
     <footer>
         <p>풋터</p>
     </footer>
 </div>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCredhWt_D9r66HjgnR3k13nI1ZasTg1d4&callback=initMap">
+</script>
 </body>
 </html>

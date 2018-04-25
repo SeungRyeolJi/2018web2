@@ -17,6 +17,8 @@ $(document).ready(function () {
         infoBoxChange('c');
     });
 
+
+
     function infoBoxChange(result){
         if(result == 'n'){
             $(".infoBox>button:nth-child(1)").css({'color':'#666bff'});
