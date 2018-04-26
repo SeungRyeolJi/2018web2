@@ -2,47 +2,48 @@ $(document).ready(function () {
     var next = 1;
     var adNext = 1;
 
+
     var imgSlide = $(".imgSlide>img");
     var adSlide = $(".ad>img");
+    adSlide.eq(0).css({'display':'block'})
+    $('.circle').eq(0).css({ 'background':'#ffffff'});
 
     var max = imgSlide.length-1;
     var adMax = adSlide.length-1;
     var intervalTime = 3000;
     imgSlide.eq(max).animate({left:800},0);
     imgSlide.eq(1).animate({left:800},0);
-    adSlide.eq(adMax).animate({left:265},0);
-    adSlide.eq(1).animate({left:265},0);
+    adSlide.eq(0).css({'z-index':'100'});
 
     var slideCurrent = setInterval(function () { slide("mainSlide");},intervalTime);
     var ad_slideCurrent = setInterval(function () {slide("adSlide")},intervalTime);
 
     $("#stop_start").click(function () {
-        stopAndStart($(this));
+        stopAndStart($(this),"mainSlide");
     });
     $(".ad_control>img").click(function () {
-        stopAndStart($(this));
+        stopAndStart($(this),"adSlide");
     });
 
-    function stopAndStart(st) {
+    function stopAndStart(st,kind) {
         if( st.attr('src') == "img/stop.png") {
             st.attr('src', 'img/start.png');
-            if(st == $(".ad_control>img") )
+            if(kind == "adSlide" )
                 clearInterval(ad_slideCurrent);
-            else
+            else if(kind == "mainSlide")
                 clearInterval(slideCurrent);
         }
 
         else {
-            if(st == $(".ad_control>img") )
-                ad_slideCurrent = setInterval(function () { slide("adSlide");},intervalTime);
-            else
-                slideCurrent = setInterval(function () { slide("mainSlide");},intervalTime);
-
+            if(kind =="adSlide" )
+                ad_slideCurrent = setInterval(function () { slide(kind);},intervalTime);
+            else if(kind == "mainSlide")
+                slideCurrent = setInterval(function () { slide(kind);},intervalTime);
             st.attr('src', 'img/stop.png');
         }
     }
 
-    function slide(contentName, imgGroup) {
+    function slide(contentName) {
         if(contentName == "mainSlide"){
             //에러
             imgSlide.eq(next).animate({left: -800}, 0);
@@ -54,12 +55,13 @@ $(document).ready(function () {
                 next = 0;
         }
         else if(contentName == "adSlide"){
-            adSlide.eq(adNext).animate({right: 265}, 0);
-            adSlide.eq(adNext - 1).animate({right: -265}, 500);
-            adSlide.eq(adNext).animate({right: 0},500);
+            adSlide.eq(adNext-1).css({'display': 'none'});
+            $('.circle').eq(adNext-1).css({ 'background':'#262634'});
+            adSlide.eq(adNext).css({'display': 'block'});
+            $('.circle').eq(adNext).css({ 'background':'#ffffff'});
 
             adNext++;
-            if (adNext > adMax)
+            if ( adNext > adMax)
                 adNext = 0;
         }
     };

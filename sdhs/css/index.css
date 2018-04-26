@@ -410,6 +410,10 @@ a{
         width: 265px;
         height: 265px;
         transition: 0.5s;
+        display: none;
+    }
+    ad>img:nth-child(1){
+        display: block;
     }
     .ad_control{
         margin-top: 265px;
@@ -423,7 +427,6 @@ a{
         width: 20px;
         height: 20px;
         border-radius: 10px;
-        background: #ffffff;
         display: inline-block;
         margin: 5px 0 0 5px;
     }
