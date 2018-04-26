@@ -92,12 +92,10 @@ $(document).ready(function () {
 
     $("#loginButton").click(function () {
         $("#login_Popup").css({'display':'block'});
-        $("#mask").css({'display':'blcok'});
         $("#join_Popup").css({'display': 'none'});
     });
     $("#close_login").click(function () {
         $("#login_Popup").css({'display': 'none'});
-        $("#mask").css({'display': 'none'});
     });
 
     $("#joinButton").click(function () {
