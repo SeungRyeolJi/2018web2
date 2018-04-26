@@ -384,7 +384,18 @@ a{
     border-radius: 5px;
     box-sizing: border-box;
 }
+.mealBox h3{
+    color: white;
+    padding: 5px;
+    background: #262634;
+}
+.mealBox img{
+    width: inherit;
+    height: auto;
+    cursor: pointer;
+}
     .ad{
+        overflow: hidden;
         margin-top: 10px;
         display: inline;
         width: 265px;
@@ -402,7 +413,7 @@ a{
     }
     .ad_control{
         margin-top: 265px;
-        background: #8d8d8d;
+        background: #262634;
         width: 100%;
         height: 35px;
         border-bottom-left-radius: 5px;
@@ -415,6 +426,11 @@ a{
         background: #ffffff;
         display: inline-block;
         margin: 5px 0 0 5px;
+    }
+    .ad_control>img{
+        display: inline-block;
+        width: 20px;
+        height: 20px;
     }
 footer{
     color: white;

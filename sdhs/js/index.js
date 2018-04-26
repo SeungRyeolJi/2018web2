@@ -1,16 +1,68 @@
 $(document).ready(function () {
     var next = 1;
-    var adNext = 0;
+    var adNext = 1;
 
-    var $imgSlide = $(".imgSlide>img");
-    var imgSlide = $imgSlide;
+    var imgSlide = $(".imgSlide>img");
+    var adSlide = $(".ad>img");
+
     var max = imgSlide.length-1;
+    var adMax = adSlide.length-1;
     var intervalTime = 3000;
     imgSlide.eq(max).animate({left:800},0);
     imgSlide.eq(1).animate({left:800},0);
+    adSlide.eq(adMax).animate({left:265},0);
+    adSlide.eq(1).animate({left:265},0);
 
-    var slideCurrent = setInterval(slide,intervalTime);
-    setInterval(adimgSlide(),intervalTime);
+    var slideCurrent = setInterval(function () { slide("mainSlide");},intervalTime);
+    var ad_slideCurrent = setInterval(function () {slide("adSlide")},intervalTime);
+
+    $("#stop_start").click(function () {
+        stopAndStart($(this));
+    });
+    $(".ad_control>img").click(function () {
+        stopAndStart($(this));
+    });
+
+    function stopAndStart(st) {
+        if( st.attr('src') == "img/stop.png") {
+            st.attr('src', 'img/start.png');
+            if(st == $(".ad_control>img") )
+                clearInterval(ad_slideCurrent);
+            else
+                clearInterval(slideCurrent);
+        }
+
+        else {
+            if(st == $(".ad_control>img") )
+                ad_slideCurrent = setInterval(function () { slide("adSlide");},intervalTime);
+            else
+                slideCurrent = setInterval(function () { slide("mainSlide");},intervalTime);
+
+            st.attr('src', 'img/stop.png');
+        }
+    }
+
+    function slide(contentName, imgGroup) {
+        if(contentName == "mainSlide"){
+            //에러
+            imgSlide.eq(next).animate({left: -800}, 0);
+            imgSlide.eq(next - 1).animate({left: 800}, 1000);
+            imgSlide.eq(next).animate({left: 0}, 1000);
+
+            next++;
+            if ( next > max)
+                next = 0;
+        }
+        else if(contentName == "adSlide"){
+            adSlide.eq(adNext).animate({right: 265}, 0);
+            adSlide.eq(adNext - 1).animate({right: -265}, 500);
+            adSlide.eq(adNext).animate({right: 0},500);
+
+            adNext++;
+            if (adNext > adMax)
+                adNext = 0;
+        }
+    };
 
     $(".infoBox>button:nth-child(1)").click(function () {
         $(this).css({'color':'#666bff'});
@@ -20,9 +72,6 @@ $(document).ready(function () {
         infoBoxChange('c');
     });
 
-    function adimgSlide() {
-
-    }
 
     function infoBoxChange(result){
         if(result == 'n'){
@@ -58,16 +107,7 @@ $(document).ready(function () {
         $("#join_Popup").css({'display': 'none'});
         $("#mask").css({'display': 'none'});
     });
-    
-    function slide() {
-        imgSlide.eq(next).animate({left:-800},0);
-        imgSlide.eq(next -1).animate({left:800},1000);
-        imgSlide.eq(next).animate({left:0},1000);
 
-        next++;
-        if(next > max)
-            next = 0;
-    };
     function minusSlide(){
         next--;
         if(next < 0 )
@@ -85,10 +125,10 @@ $(document).ready(function () {
     $("#left_arrow").click(function () {
         if(  $("#stop_start").attr('src') == "img/stop.png") {
             clearInterval(slideCurrent);
-            slide();
-            slideCurrent = setInterval(slide, intervalTime);
+            slide("mainSlide");
+            slideCurrent = setInterval(function () { slide("mainSlide");}, intervalTime);
         }else{
-            slide();
+             slide("mainSlide");
         }
     });
 
@@ -101,22 +141,9 @@ $(document).ready(function () {
         if( $("#stop_start").attr('src') == "img/stop.png") {
             clearInterval(slideCurrent);
             minusSlide();
-            slideCurrent = setInterval(slide, intervalTime);
+            slideCurrent = setInterval(function () { slide("mainSlide");}, intervalTime);
         }else{
             minusSlide();
         }
     });
-
-    $("#stop_start").click(function () {
-        var st = $(this);
-        if( st.attr('src') == "img/stop.png") {
-            st.attr('src', 'img/start.png');
-            clearInterval(slideCurrent);
-            return false;
-        }
-        else {
-            slideCurrent = setInterval(slide,intervalTime);
-            st.attr('src', 'img/stop.png');
-        }
-    })
 });
