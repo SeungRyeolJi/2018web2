@@ -100,12 +100,10 @@ $(document).ready(function () {
 
     $("#joinButton").click(function () {
         $("#join_Popup").css({'display':'block'});
-        $("#mask").css({'display':'blcok'});
         $("#login_Popup").css({'display': 'none'});
     });
     $("#close_join").click(function () {
         $("#join_Popup").css({'display': 'none'});
-        $("#mask").css({'display': 'none'});
     });
 
     function minusSlide(){
