@@ -24,10 +24,12 @@ $(document).ready(function () {
 
     $(".mealBox>img").click(function () {
         $("#meal_Popup").css({"display":"block"});
+        $("#mask").css({"display":"block"});
     })
 
     $("#meal_close_login").click(function () {
         $("#meal_Popup").css({"display":"none"});
+        $("#mask").css({"display":"none"});
     })
 
     $("#stop_start").click(function () {
@@ -116,17 +118,21 @@ $(document).ready(function () {
     $("#loginButton").click(function () {
         $("#login_Popup").css({'display':'block'});
         $("#join_Popup").css({'display': 'none'});
+        $("#mask").css({"display":"block"});
     });
     $("#close_login").click(function () {
         $("#login_Popup").css({'display': 'none'});
+        $("#mask").css({"display":"none"});
     });
 
     $("#joinButton").click(function () {
         $("#join_Popup").css({'display':'block'});
         $("#login_Popup").css({'display': 'none'});
+        $("#mask").css({"display":"block"});
     });
     $("#close_join").click(function () {
         $("#join_Popup").css({'display': 'none'});
+        $("#mask").css({"display":"none"});
     });
 
     function minusSlide(){
