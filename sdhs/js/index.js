@@ -18,12 +18,27 @@ $(document).ready(function () {
     var slideCurrent = setInterval(function () { slide("mainSlide");},intervalTime);
     var ad_slideCurrent = setInterval(function () {slide("adSlide")},intervalTime);
 
+    $(".circle").click(function () {
+        currentImgChange( $(".circle").index(this) , $(".circle"), $(".ad>img"));
+    })
+
     $("#stop_start").click(function () {
         stopAndStart($(this),"mainSlide");
     });
     $(".ad_control>img").click(function () {
         stopAndStart($(this),"adSlide");
     });
+
+    function currentImgChange(currentIndex , tagName , changeImg) {
+        tagName.eq(currentIndex).css({"background":"#ffffff"});
+        tagName.not( tagName.eq(currentIndex)).css({"background":"#50506f"})
+        adNext = currentIndex;
+        clearInterval(ad_slideCurrent);
+        changeImg.eq(currentIndex).css({"display":"block"});
+        changeImg.not( changeImg.eq(currentIndex)).css({"display":"none"});
+        slide("adSlide");
+        ad_slideCurrent = setInterval(function () {slide("adSlide")},intervalTime);
+    }
 
     function stopAndStart(st,kind) {
         if( st.attr('src') == "img/stop.png") {
@@ -56,7 +71,7 @@ $(document).ready(function () {
         }
         else if(contentName == "adSlide"){
             adSlide.eq(adNext-1).css({'display': 'none'});
-            $('.circle').eq(adNext-1).css({ 'background':'#262634'});
+            $('.circle').eq(adNext-1).css({ 'background':'#50506f'});
             adSlide.eq(adNext).css({'display': 'block'});
             $('.circle').eq(adNext).css({ 'background':'#ffffff'});
 
