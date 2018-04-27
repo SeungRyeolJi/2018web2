@@ -176,9 +176,10 @@ a{
     font-size: 12px;
 }
 .login_join>ul{
+    display: inline;
     overflow: hidden;
 }
-.login_join>ul>li{
+.login_join>ul>li {
     text-align: center;
     line-height: 30px;
     box-sizing: border-box;
@@ -186,7 +187,13 @@ a{
     float: left;
     border: 1px solid #666666;
 }
-.login_join>ul>li>input{
+.login_join form{
+    float: right;
+}
+.login_join  form>input{
+    left: 3px;
+    position: relative;
+    top:-12px;
     width: 125px;
     line-height: 30px;
     box-sizing: border-box;
