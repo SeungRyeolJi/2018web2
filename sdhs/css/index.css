@@ -422,9 +422,11 @@ a{
     .circle {
         width: 20px;
         height: 20px;
+        background: #50506f;
         border-radius: 10px;
         display: inline-block;
         margin: 5px 0 0 5px;
+        cursor: pointer;
     }
     .ad_control>img{
         display: inline-block;
