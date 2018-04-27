@@ -22,6 +22,14 @@ $(document).ready(function () {
         currentImgChange( $(".circle").index(this) , $(".circle"), $(".ad>img"));
     })
 
+    $(".mealBox>img").click(function () {
+        $("#meal_Popup").css({"display":"block"});
+    })
+
+    $("#meal_close_login").click(function () {
+        $("#meal_Popup").css({"display":"none"});
+    })
+
     $("#stop_start").click(function () {
         stopAndStart($(this),"mainSlide");
     });
