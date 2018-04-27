@@ -5,7 +5,26 @@
 body{
     background: #f3f6f8;
 }
-
+#mask{
+    width: 100%;
+    height: 100%;
+    background: rgba( 0 ,0,0 , 0.5);
+}
+#meal_Popup{
+    display: none;
+    position: absolute;
+    width: 600px;
+    height: 200px;
+    left: 50%;
+    top : 70%;
+    margin-top: -150px;
+    margin-left: -300px;
+    background: #ffffff;
+    z-index: 160;
+}
+#meal_Popup>img{
+    width: inherit;
+}
 #login_Popup{
     display: none;
     position: absolute;
