@@ -132,10 +132,16 @@ $(document).ready(function () {
         $("#mask").css({"display":"none"});
     });
 
-    $("#joinButton").click(function () {
+    function join_Popup(){
         $("#join_Popup").css({'display':'block'});
         $("#login_Popup").css({'display': 'none'});
         $("#mask").css({"display":"block"});
+    }
+    $("#login_Popup_join").click(function () {
+        join_Popup();
+    })
+    $("#joinButton").click(function () {
+        join_Popup();
     });
     $("#close_join").click(function () {
         $("#join_Popup").css({'display': 'none'});
