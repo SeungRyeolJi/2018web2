@@ -11,11 +11,18 @@ $(document).ready(function () {
     var max = imgSlide.length-1;
     var adMax = adSlide.length-1;
     var intervalTime = 3000;
-    imgSlide.eq(max).animate({left:800},0);
-    imgSlide.eq(1).animate({left:800},0);
+
+    function slideSetting(img) {
+        for (var i=1 ;i<3;i++) {
+            console.log(img.eq(i).width());
+            img.eq(i).animate({left: img.eq(i).width()}, 0);
+        }
+    }
+
     adSlide.eq(0).css({'z-index':'100'});
 
     var slideCurrent = setInterval(function () { slide("mainSlide");},intervalTime);
+    slideSetting(imgSlide);
     var ad_slideCurrent = setInterval(function () {slide("adSlide")},intervalTime);
 
     $(".circle").click(function () {
@@ -71,8 +78,8 @@ $(document).ready(function () {
     function slide(contentName) {
         if(contentName == "mainSlide"){
             //에러
-            imgSlide.eq(next).animate({left: -800}, 0);
-            imgSlide.eq(next - 1).animate({left: 800}, 1000);
+            imgSlide.eq(next).animate({left: -1000}, 0);
+            imgSlide.eq(next - 1).animate({left: 1000}, 1000);
             imgSlide.eq(next).animate({left: 0}, 1000);
 
             next++;
@@ -139,8 +146,8 @@ $(document).ready(function () {
         next--;
         if(next < 0 )
             next = max;
-        imgSlide.eq(next-1).animate({left:800},0);
-        imgSlide.eq(next).animate({left:-800},1000);
+        imgSlide.eq(next-1).animate({left:imgSlide.eq(0).width()},0);
+        imgSlide.eq(next).animate({left:-imgSlide.eq(0).width()},1000);
         imgSlide.eq(next -1).animate({left:0},1000);
     };
 
