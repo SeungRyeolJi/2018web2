@@ -1,0 +1,24 @@
+*{margin: 0;padding: 0;box-sizing: border-box}
+a{color: inherit;text-decoration: none}
+.soccerBg{background: url(bg_stadium.png) no-repeat;width: 648px;height: 818px;position: relative}
+.redTeam,.blackTeam{display: inline-block;position: absolute}
+.redTeam>a,.blackTeam>a{display:inline-block;height: 52px;width: 52px;border: 1px solid white;border-radius: 26px;color: white;font-size: 18px;line-height: 52px;text-align: center;}
+.redTeam>a{background-color: #e23442;}
+.blackTeam>a{background-color: #404040;}
+.redTeam>div,.blackTeam>div{font-size: 13px;margin-top : 2px;text-align: center;display: block;color: white;position: absolute}
+.redTeam:nth-child(1),.blackTeam:nth-child(11){left: 50%;margin-left: -26px;position: absolute}
+.redTeam:nth-child(1){top:70px}
+.blackTeam:nth-child(11){top:690px}
+.redTeam:nth-child(n+2):nth-child(-n+4){top: 160px;}
+.redTeam:nth-child(n+5):nth-child(-n+8){top: 245px}
+.redTeam:nth-child(n+9):nth-child(-n+11){top: 330px;}
+.blackTeam:nth-child(n+1):nth-child(-n+3){bottom: 330px;}
+.blackTeam:nth-child(n+4):nth-child(-n+7){bottom: 245px}
+.blackTeam:nth-child(n+8):nth-child(-n+10){bottom: 160px;}
+.redTeam:nth-child(2),.redTeam:nth-child(9),.blackTeam:nth-child(1),.blackTeam:nth-child(8){left: 82px;}
+.redTeam:nth-child(3),.redTeam:nth-child(10),.blackTeam:nth-child(2),.blackTeam:nth-child(9){left: 50%;margin-left: -26px}
+.redTeam:nth-child(4),.redTeam:nth-child(11),.blackTeam:nth-child(3),.blackTeam:nth-child(10){left: 524px}
+.redTeam:nth-child(5),.blackTeam:nth-child(4){left: 55px}
+.redTeam:nth-child(6),.blackTeam:nth-child(5){left: 217px}
+.redTeam:nth-child(7),.blackTeam:nth-child(6){left: 379px}
+.redTeam:nth-child(8),.blackTeam:nth-child(7){left: 541px}
