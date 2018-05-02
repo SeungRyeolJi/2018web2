@@ -5,7 +5,7 @@ a{color: inherit;text-decoration: none}
 .redTeam>a,.blackTeam>a{display:inline-block;height: 52px;width: 52px;border: 1px solid white;border-radius: 26px;color: white;font-size: 18px;line-height: 52px;text-align: center;}
 .redTeam>a{background-color: #e23442;}
 .blackTeam>a{background-color: #404040;}
-.redTeam>div,.blackTeam>div{font-size: 13px;margin-top : 2px;text-align: center;display: block;color: white;position: absolute}
+.redTeam>p,.blackTeam>p{font-size: 13px;margin-top : 2px;text-align: center;color: white;}
 .redTeam:nth-child(1),.blackTeam:nth-child(11){left: 50%;margin-left: -26px;position: absolute}
 .redTeam:nth-child(1){top:70px}
 .blackTeam:nth-child(11){top:690px}
