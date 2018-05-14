@@ -13,7 +13,7 @@
 <div id="meal_Popup">
     <div class="login_header">
         <h2>오늘의 급식 이미지</h2>
-        <img src="img/x.png" alt="닫기 버튼" id="meal_close_login">
+        <img src="img/x.png" alt="닫기 버튼" id="meal_close">
     </div>
     <img src="img/meal_popup_img.gif" alt="급식 이미지">
 </div>
@@ -131,9 +131,20 @@
             <img src="img/silde3.jpg" alt="이미지슬라이드3">
         </div>
         <div class="slideControl">
+            <div class="slideControl_content">
             <img id="left_arrow" src="img/left.png" alt="왼쪽 화살표">
             <img id="stop_start" src="img/stop.png" alt="stop_start">
             <img id="right_arrow" src="img/right.png" alt="오른쪽 화살표">
+            </div>
+            <div class='main_circle_box'>
+            <script>
+                var slideNum = $(".imgSlide>img").length;
+                for ( var i = 0 ; i<slideNum; i++) {
+                    $(".main_circle_box").append("<div class='main_slide_circle'></div>");
+                }
+                $(".main_circle_box").width(slideNum*35);
+            </script>
+            </div>
         </div>
         <div class="notify">
             <img src="img/speaker.png" alt="확성기">
@@ -231,9 +242,9 @@
             <img src="img/ad_img_2.jpg" alt="학교 음악 포스터">
             <img src="img/ad_img_3.jpg" alt="학교 음식 포스터">
             <div class="ad_control">
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
+                <div class="ad_circle"></div>
+                <div class="ad_circle"></div>
+                <div class="ad_circle"></div>
                 <img src="img/stop.png" alt="정지 또는 시작">
             </div>
         </div>
