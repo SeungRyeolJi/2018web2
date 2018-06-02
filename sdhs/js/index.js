@@ -52,8 +52,8 @@ $(document).ready(function () {
     function slide(contentName) {
         if(contentName == "mainSlide"){
             main_circle_index(next);
-            imgSlide.eq(next).animate({left: -1000}, 0);
-            imgSlide.eq(next - 1).animate({left: 1000}, 700);
+            imgSlide.eq(next).stop().animate({left: -1000}, 0);
+            imgSlide.eq(next - 1).stop().animate({left: 1000}, 700);
             imgSlide.eq(next).animate({left: 0}, 700);
             next++;
             if ( next > max)
