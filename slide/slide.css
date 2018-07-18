@@ -1,0 +1,14 @@
+#imgSlide{
+  position: relative;
+  width: 800px;
+  height: 600px;
+  margin: 0 auto ;
+  margin-top: 50px;
+  overflow: hidden;
+}
+
+#imgSlide img{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
