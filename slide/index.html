@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>20522지승렬-학교홈페이지</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+</head>
+<!--주색 보조색-->
+<body>
+<div class="wrap">
+    <div class="content">
+        <div class="imgSlide">
+           <script>
+               for(var i = 1 ; i<= 10;i++ ){
+                   $(".imgSlide").append("<img src=img/"+i+".jpg>");
+               }
+           </script>
+        </div>
+        <div class="slideControl">
+            <div class="slideControl_content">
+                <img id="left_arrow" src="img/left.png" alt="왼쪽 화살표">
+                <img id="stop_start" src="img/stop.png" alt="stop_start" class="stop_start">
+                <img id="right_arrow" src="img/right.png" alt="오른쪽 화살표">
+            </div>
+            <div class='main_circle_box'>
+                <script>
+                    var slideNum = $(".imgSlide>img").length;
+                    for ( var i = 0 ; i<slideNum; i++) {
+                        $(".main_circle_box").append("<div class='main_slide_circle'></div>");
+                    }
+                    $(".main_circle_box").width(slideNum*35);
+                </script>
+            </div>
+        </div>
+</body>
+</html>
